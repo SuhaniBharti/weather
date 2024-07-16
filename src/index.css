@@ -26,9 +26,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    overflow : hidden; 
 }
 
 body {
     background-color: var(--background);
     height: 100vh;
+    overflow: hidden; 
 }
