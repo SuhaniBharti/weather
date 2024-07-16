@@ -23,3 +23,32 @@
     width: 100%;
     gap: 1rem;
 }
+@media only screen and (max-width: 770px) {
+    .dashboard {
+        flex-direction: column;
+    }
+    .dashboard .sidecol {
+        order: -1;
+    }
+}
+@media only screen and (max-width: 545px) {
+    .dashboard .sidecol {
+        justify-content: center;
+        align-items: center;
+        width: 100%; 
+       
+    }
+    .dashboard .maincol .stats {
+        grid-template-columns: 1fr; /* This will arrange the stats items in a single column */
+        width: 50%;
+       
+    }
+     .dashboard{
+        min-height: auto;
+        flex-grow: 1; /* Allow this to grow and take up remaining space */
+     overflow-y: hidden; 
+     }
+       
+    
+   
+}
