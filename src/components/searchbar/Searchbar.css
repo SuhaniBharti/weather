@@ -42,3 +42,25 @@
     color: var(--theme);
     aspect-ratio: 1/1;
 }
+@media (max-width: 415px) and (min-height:800px) {
+    .searchbar {
+        flex-direction: row;
+       justify-content: center;
+       
+    }
+
+    .searchbar .textfield {
+        font-size: 1rem;
+        padding: 0.5rem 0.5rem 0.5rem 2rem;
+        width:min-content
+       
+    }
+
+    .searchbar .button {
+        padding: 0.5rem;
+    }
+    .searchbar .searchicon{
+        position: absolute;
+        left : 5rem
+    }
+}
