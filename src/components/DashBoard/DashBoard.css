@@ -1,3 +1,5 @@
+
+
 .dashboard {
     display: flex;
     justify-content: center;
@@ -6,7 +8,10 @@
     background-color: var(--theme);
     width: max-content;
     border-radius: 12px;
-    padding: 1rem
+    padding: 1rem;
+    overflow-y: auto; 
+    
+    
 }
 
 .dashboard .maincol, .dashboard .sidecol {
@@ -31,7 +36,7 @@
         order: -1;
     }
 }
-@media only screen and (max-width: 545px) {
+@media only screen and (max-width: 522px) {
     .dashboard .sidecol {
         justify-content: center;
         align-items: center;
@@ -39,14 +44,18 @@
        
     }
     .dashboard .maincol .stats {
-        grid-template-columns: 1fr; /* This will arrange the stats items in a single column */
+        grid-template-columns: 1fr;
         width: 50%;
        
     }
      .dashboard{
-        min-height: auto;
-        flex-grow: 1; /* Allow this to grow and take up remaining space */
-     overflow-y: hidden; 
+        
+        flex-grow: 1; 
+     overflow-y: auto; 
+     height:80vh;
+     }
+     .dashboard .maincol, .dashboard .sidecol,.dashboard .maincol .stats{
+        height:50%
      }
        
     
