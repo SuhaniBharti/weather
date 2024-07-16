@@ -8,7 +8,8 @@ import "./DashBoard.css";
 import SearchBar from "../searchbar/Searchbar";
 const DashBoard = () => {
     return (
-        <div>
+        <div id="root">
+             <div className="dashboard-container">
             <SearchBar />
             <div className="dashboard">
                 <div className="maincol">
@@ -28,6 +29,8 @@ const DashBoard = () => {
                 </div>
             </div>
         </div>
+        </div>
+       
     );
 };
 
